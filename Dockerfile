@@ -17,7 +17,7 @@ MAINTAINER Karthik Gaekwad
 
 # Update the repository
 RUN apt-get update
-apt-get -qq -y install curl
+RUN apt-get -qq -y install curl
 
 
 # Install necessary tools
