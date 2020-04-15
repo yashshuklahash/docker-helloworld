@@ -17,10 +17,11 @@ MAINTAINER Karthik Gaekwad
 
 # Update the repository
 RUN apt-get update
-RUN apt-get -qq -y install curl
+
 
 
 # Install necessary tools
+RUN apt-get update && apt-get install apt-file -y && apt-file update && apt-get install vim -y && apt-get install wget -y
 RUN apt-get install -y vim wget dialog net-tools
 
 RUN apt-get install -y nginx
