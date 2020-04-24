@@ -11,7 +11,7 @@ To pull this image:
 docker pull karthequian/helloworld:latest
 ```
 
-To run this image:
+To run 
 ```
 docker run -p 80:80/tcp "karthequian/helloworld:latest"
 ```
